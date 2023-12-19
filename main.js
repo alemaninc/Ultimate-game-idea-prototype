@@ -16,15 +16,13 @@ cons docObj = {
 }
 var skimdata = 0;
 function buy1(){
-    var buy1Cost = Math.floor(10 * Math.pow(1.1,skimdata));     
-    if(science >= buy1Cost){                                   
-        skimdata = skimdata + 1;                                   
-    	science = science - sciCost;                          
+    if(science >= buy1Cost(){                                      
+    	science = science - buy1Cost();                            
+        skimdata = skimdata + 1;                              
         document.getElementById('buy1').innerHTML = skimdata;  
         document.getElementById('science').innerHTML = science;  
     };
-    var nextCost = Math.floor(10 * Math.pow(1.1,skimdata));       
-    document.getElementById('buy1Cost').innerHTML = nextCost;}
+    document.getElementById('buy1Cost').innerHTML = buy1Cost();}
 function buy1Cost() {return 10 * 1.1 ** skimdata}
 
 window.setInterval(function(){
